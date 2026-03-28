@@ -3,7 +3,8 @@
 This repository contains example notebook `ml_training.ipynb` for fine‑tuning state‑of‑the‑art transformer models on an abstractive summarization task using the [Hugging Face Transformers](https://github.com/huggingface/transformers) library. The repository demonstrates how to fine‑tune several models on a summarization dataset and also provides a web interface for interactive inference.
 
 Due to GPU shortages, I was only able to fine‑tune the **T5‑Small** model. The Pegasus‑XSum and BART‑Base experiments were not completed because of limited GPU resources.  
-![GPU Shortage](https://gitlab.informatik.uni-bremen.de/alimirza/aml_project/-/raw/main/Summarization/GPU_Shortage.png)  
+![GPU Shortage](https://raw.githubusercontent.com/Mohsin-Ali-Mirza/aml_project/refs/heads/main/Summarization/GPU_Shortage.png)  
+
 *Screenshot: GPU shortage – only T5‑Small was fine‑tuned due to hardware constraints.*
 
 ---
@@ -358,10 +359,10 @@ The training scripts include the argument `resume_from_checkpoint=True` so that 
 > **Note:**  
 > The fine‑tuned T5 model performance (with only 2 epochs) was not as good as the main T5‑Base model but outperformed the T5‑Small model. This performance could be further improved with a better choice of hyperparameters and additional training epochs. Due to current GPU hardware constraints (Google T4 GPU and Kaggle's 2× T4 GPUs), only 2 epochs were feasible.
 
-![Evaluation Graph](https://gitlab.informatik.uni-bremen.de/alimirza/aml_project/-/raw/main/Summarization/evaluation.png?ref_type=heads)
+![Evaluation Graph](https://raw.githubusercontent.com/Mohsin-Ali-Mirza/aml_project/refs/heads/main/Summarization/evaluation.png)
 
 
-![Benchmarks](https://gitlab.informatik.uni-bremen.de/alimirza/aml_project/-/raw/main/Summarization/Benchmarks.png?ref_type=heads)  
+![Benchmarks](https://raw.githubusercontent.com/Mohsin-Ali-Mirza/aml_project/refs/heads/main/Summarization/Benchmarks.png)  
 You can see that Pegasus has the highest Rogue Score, followed by Bart and then T5 model. If given sufficient gpu resources we would train on pegasus, try out different variants of BART model to compare the results. Train the T5 on T5-base and train all of the models on more epochs to properly see the comparison. Note the reason why Pegasus performs better than other models can be understood in the [Architectural Distinctions and Design Philosophies](#architectural-distinctions-and-design-philosophies) i.e Gap-Sentence Generation (GSG) works better than MLM (Masked Language Model)
 
 ---
