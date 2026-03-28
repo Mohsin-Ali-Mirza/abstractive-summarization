@@ -1,5 +1,3 @@
-For the Projects you can install a single `requirements.txt` file
-
 # 📂 Project Folder
 
 ## 1. Abstractive Summarization Using Transformer 
