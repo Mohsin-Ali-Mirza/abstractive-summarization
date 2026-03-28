@@ -1,8 +1,10 @@
 This repository contains two mini-projects related to 03-IMAP-AML Advanced Machine Learning:
 
+For the Projects you can install a single `requirements.txt` file
+
 # 📂 Project Folders
 
-## 1. Abstractive Summarization Main Mini Project Using Transformers
+## 1. Abstractive Summarization Using Transformers (Main Mini Project) 
 
 This project involves building an abstractive text summarization model using Transformer-based architectures. It covers:
 
@@ -19,17 +21,6 @@ This folder contains two important files:
 streamlit run app.py
 ```
 
-## 2. Regularization Mini Project (2nd Mini Project)
-
-This project focuses on comparing the effects of different regularization techniques on a simple Neural Network such as:
-
-- No Regularization
-- L1 Regularization
-- L2 Regularization
-- Dropout
-
 ## 👨‍💻 Authors
 
 - Mohsin Ali Mirza
-
-- Shimul
