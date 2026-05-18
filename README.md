@@ -2,6 +2,8 @@
 
 ## 1. Abstractive Summarization Using Transformer 
 
+**Results: https://github.com/Mohsin-Ali-Mirza/abstractive-summarization/blob/main/Summarization/Readme.md**
+
 This project involves building an abstractive text summarization model using Transformer-based architectures. It covers:
 
 - Data preprocessing
